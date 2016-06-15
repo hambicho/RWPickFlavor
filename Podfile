@@ -7,5 +7,6 @@ target 'RWPickFlavor' do
 
   # Pods for RWPickFlavor
 pod 'Alamofire', '~> 2.0'
-pod 'MBProgressHUD', '~> 0.9.0'
+#pod 'MBProgressHUD'
+ pod 'BetterBaseClasses', '~> 1.0'
 end

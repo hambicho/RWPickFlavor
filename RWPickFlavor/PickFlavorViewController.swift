@@ -8,10 +8,13 @@
 
 import UIKit
 import Alamofire
-import MBProgressHUD
+//import MBProgressHUD
+import BetterBaseClasses
 
-public class PickFlavorViewController: UIViewController, UICollectionViewDelegate {
-  
+
+//public class PickFlavorViewController: UIViewController, UICollectionViewDelegate {
+public class PickFlavorViewController: BaseViewController, UICollectionViewDelegate {
+
   // MARK: Instance Variables
   
   var flavors: [Flavor] = [] {
@@ -44,7 +47,7 @@ public class PickFlavorViewController: UIViewController, UICollectionViewDelegat
   
   private func loadFlavors() {
     
-    showLoadingHUD()  // <-- Add this line
+//    showLoadingHUD()  // <-- Add this line
     
     // 1
     Alamofire.request(
@@ -58,7 +61,7 @@ public class PickFlavorViewController: UIViewController, UICollectionViewDelegat
           return
         }
         
-        strongSelf.hideLoadingHUD()  // <-- Add this line
+//        strongSelf.hideLoadingHUD()  // <-- Add this line
         
         var flavorsArray: [[String : String]]! = nil
         
@@ -82,14 +85,14 @@ public class PickFlavorViewController: UIViewController, UICollectionViewDelegat
     };
   }
   
-  private func showLoadingHUD() {
-    let hud = MBProgressHUD.showHUDAddedTo(contentView, animated: true)
-    hud.labelText = "Loading..."
-  }
-  
-  private func hideLoadingHUD() {
-    MBProgressHUD.hideAllHUDsForView(contentView, animated: true)
-  }
+//  private func showLoadingHUD() {
+//    let hud = MBProgressHUD.showHUDAddedTo(contentView, animated: true)
+//    hud.labelText = "Loading..."
+//  }
+//  
+//  private func hideLoadingHUD() {
+//    MBProgressHUD.hideAllHUDsForView(contentView, animated: true)
+//  }
   
   private func selectFirstFlavor() {
     

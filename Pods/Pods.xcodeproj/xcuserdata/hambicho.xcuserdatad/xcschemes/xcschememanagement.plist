@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MBProgressHUD.xcscheme</key>
+		<key>BetterBaseClasses.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98D0DE056489074B42146C17128324E6</key>
+		<key>961C5F67EDDA869D8D88F7FD4D40AD5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
+		<key>C59230DBD73698F2D315A58920318946</key>
 		<dict>
 			<key>primary</key>
 			<true/>
